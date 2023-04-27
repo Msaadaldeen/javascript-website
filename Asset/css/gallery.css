@@ -1,0 +1,170 @@
+/** {
+    margin: 0;
+    padding: 0;
+}*/
+
+.pics {
+	max-width: 500px;
+	max-height: 500px;
+}
+
+.gallery {
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 360px);
+	grid-template-rows: repeat(3, 20vw);
+	grid-gap: 15px;
+	justify-content: center;
+	margin-bottom: 8rem;
+}
+
+.pics img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.galleryText {
+	text-align: center;
+	margin: 2em 0 2em 0;
+}
+
+.lightBox {
+	background: rgba(0, 0, 0, .96);
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	left: 0;
+	top: 275%;
+	display: flex;
+	z-index: 1;
+}
+
+.picsMini {
+	max-width: 150px;
+	max-height: 150px;
+}
+
+.picsMini img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.mini {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	gap: 10px;
+	width: 100%;
+	margin: auto;
+	justify-content: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.rightBtn {
+	position: absolute;
+	top: 46%;
+	right: 0;
+	border: none;
+	height: 50px;
+	background: rgba(0, 0, 0, 0);
+}
+
+.leftBtn {
+	position: absolute;
+	top: 46%;
+	left: 0;
+	border: none;
+	border-radius: 11px;
+	height: 50px;
+	background: rgba(0, 0, 0, 0);
+}
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 0%;
+	border: none;
+	background: rgba(0, 0, 0, 0);
+	margin: 1em;
+}
+
+.play {
+	position: absolute;
+	top: 0;
+	right: 5%;
+	margin-top: 0.5em;
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	margin-right: 1.5em;
+}
+
+.position {
+	position: absolute;
+	top: 0;
+	left: 5%;
+	color: #fff;
+	margin-top: 0.5em;
+	font-size: 1.5em;
+}
+
+.current {
+	object-fit: cover;
+	width: 91.4%;
+}
+
+.size {
+	max-height: 74%;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+@media (max-width: 576px) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(2, 200px);
+		grid-template-rows: repeat(5, 44vw);
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(3, 250px);
+		grid-template-rows: repeat(3, 25vw);
+	}
+}
+
+@media (min-width: 768px) {
+	.gallery {
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(3, 250px);
+		grid-template-rows: repeat(3, 25vw);
+	}
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+	.gallery {
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(3, 215px);
+		grid-template-rows: repeat(3, 25vw);
+	}
+}
+
+@media (min-width: 576px) and (max-width: 650px) {
+	.gallery {
+		display: grid;
+		margin: auto;
+		grid-template-columns: repeat(3, 170px);
+		grid-template-rows: repeat(3, 25vw);
+	}
+}

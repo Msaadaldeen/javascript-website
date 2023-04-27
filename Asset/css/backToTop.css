@@ -1,0 +1,21 @@
+#backToTop {
+	position: fixed;
+	right: 1em;
+	bottom: 10em;
+	background-color: transparent;
+	border: none;
+	opacity: 0.6;
+}
+
+#backToTop img {
+	width: 3rem;
+	object-fit: cover;
+}
+
+.hiddenBtn {
+	display: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}

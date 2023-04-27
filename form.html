@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Asset/css/reset.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="Asset/css/hero-style.css">
+    <link rel="stylesheet" href="./Asset/Css/form.css">
+    <script src="./form.js" defer></script>
+</head>
+<body>
+
+    <header id="main-header">
+        <a href="index.html"><img class="logo-info" src="asset/images/logo.png" alt="Logo" width="103" height="56"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <nav>
+            <ul class="main-menu">
+                <a href="./index.html"><li class="hover" style="color: #ad5623;">Home</li></a>
+                <a href="#"><li>Rezepte</li></a>
+                <a href="#"><li>Kurse</li></a>
+                <a href="./form.html"><li>Kontakt</li></a>
+            </ul>
+        </nav>
+        <div class="button-center">
+            <a href="#"><button class=" button-info">Deu</button></a>
+            <a href="#"><img class="polygon-info" src="asset/images/Polygon 1.png" alt="arrow"></a>
+            <a href="#"><img class="button-border" src="asset/images/Icon material-account-circle.png" alt="login"></a>
+        </div>
+    </header>
+
+    <div class="main-pic">
+        <img style="object-fit: cover; height: 20rem; " src="./Asset/images/lydia-matzal-CK5IvQ_yZwg-unsplash.jpg" alt="">
+    </div>
+
+
+    <div class="space">
+
+    </div>
+
+    <h1>Nehmen Sie jetzt Kontakt auf</h1>
+
+    <div class="form-position">
+        <form>
+            <div class="radio">
+                <label>Anrede</label>
+                <div class="field">
+                    <div class="radioInput">
+                        <input type="radio" name="anrede" checked="checked">
+                        <label>Herr</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="radioInput">
+                        <input type="radio" name="anrede">
+                        <label>Frau</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="radioInput">
+                        <input type="radio" name="anrede">
+                        <label>sonstiges</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fieldStyle">
+                <div class="inputfield">
+                    <input type="text" name="firstName" placeholder="First Name">
+                </div>
+                <span class="errorMessage" data-field="firstName"></span>
+            </div>
+
+            <div class="fieldStyle">
+                <div class="inputfield">
+                    <input type="text" name="lastName" placeholder="Last Name">
+                </div>
+                <span class="errorMessage" data-field="lastName"></span>
+            </div>
+
+            <div class="fieldStyle">
+                <div class="inputfield">
+                    <input type="text" name="email" placeholder="E-Mail">
+                </div>
+                <span class="errorMessage" data-field="email"></span>
+            </div>
+
+            <div class="fieldStyle">
+                <div class="inputfield">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <span class="errorMessage" data-field="password"></span>
+            </div>
+
+            <div class="fieldStyle">
+                <div class="inputfield">
+                    <input type="text" name="phone" placeholder="Telephone">
+                </div>
+                <span class="errorMessage" data-field="phone"></span>
+            </div>
+
+            <div class="checkboxInput">
+                <input type="checkbox" name="newsletter">
+                <label>Newsletter Abonnieren.</label>
+            </div>
+        
+            <div class="checkboxStyle">
+                <div class="checkboxInput">
+                    <input class="agbBtn" type="checkbox" name="agbs">
+                    <label>AGB Bestätigen.</label>
+                </div>
+                <span class="errorMessage" data-field="agbs"></span>
+            </div>
+
+            <select>
+                <option selected value="0">Gerichte</option>
+                <option value="1">Vegetarisch</option>
+                <option value="2">Vegan</option>
+                <option value="3">Nachtisch</option>
+              </select>
+
+
+            <div class="submit">
+                <button class="submitButton" id="submitBtn"> Submit </button>
+            </div>
+
+
+        </form>
+    </div>
+
+
+
+
+    <footer class="main-footer">
+        <img class="logo-info" src="asset/images/logo.png" alt="Logo" width="103" height="56">
+        <nav>
+            <ul class="main-menu">
+                <a href="#"><li>Impressum</li></a>
+                <a href="#"><li>Nutzungsbedingungen</li></a>
+                <a href="#"><li>Datenschutz</li></a>
+            </ul>
+        </nav>
+        <img class="social-media-icons" src="asset/images/Social Media Icons.png" alt="social-media">
+    </footer>
+
+    
+</body>
+</html>

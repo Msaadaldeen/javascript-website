@@ -1,0 +1,125 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(232, 230, 230);
+}
+
+h1 {
+	font-size: 1.75em;
+	text-align: center;
+	margin: 1em 0;
+}
+
+form {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 50%;
+	border: 1px solid #ad5623;
+	padding: 1rem;
+	background-color: #fff;
+}
+
+.radio {
+	margin-left: 5%;
+	margin-bottom: 0.5em;
+}
+
+/*.ui.input.fluid {
+	display: flex;
+}*/
+
+.fieldStyle {
+	margin-bottom: 1em;
+}
+
+.inputfield input {
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 0.5em;
+	padding-left: 1em;
+	padding: 1em;
+	margin-bottom: 0.3em;
+	outline: none;
+	border: 1px solid #f0cdb9;
+}
+
+.inputfield input:focus {
+	border: 2px solid #ad5623;
+}
+
+.inputfield {
+	width: 90%;
+	margin: 0 auto;
+}
+
+span {
+	color: red;
+	margin-left: 5.5%;
+}
+
+.checkboxInput {
+	margin-left: 5.1%;
+}
+
+.checkboxStyle {
+	margin-bottom: 0.5em;
+	margin-top: .2em;
+}
+
+select {
+	/* Reset */
+	appearance: none;
+	border: 0;
+	outline: 0;
+	font: inherit;
+	/* Personalize */
+	width: 90%;
+	padding: 0.6em;
+	padding-left: 1em;
+	color: black;
+	background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+			no-repeat right 0.8em center / 1.4em,
+		linear-gradient(to left, rgba(247, 115, 34, 0.989) 3em, rgba(255, 233, 221, 0.2) 3em);
+	border-radius: 0.25em;
+	box-shadow: .1em .1em .1em rgba(77, 72, 72, 0.8);
+	cursor: pointer;
+	background-color: rgb(251, 241, 230);
+	margin-bottom: 1em;
+	margin-left: 5.1%;
+	-webkit-appearance: none;
+}
+
+select option {
+	color: inherit;
+	background-color: #f0edea;
+}
+
+select:focus {
+	outline: none;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+.submit {
+	display: flex;
+	justify-content: center;
+}
+
+.submitButton {
+	width: 8em;
+	height: 2em;
+	background-color: #ed7530;
+	color: #fff;
+	font-size: 1em;
+	display: block;
+	border-style: none;
+	border-radius: 45px;
+	cursor: pointer;
+}
+
+.submitButton:hover {
+	background-color: #ad5623;
+}
